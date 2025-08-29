@@ -1,0 +1,88 @@
+:root {
+    --primary: #41d9fe;
+    --accent: #c28bd3;
+    --bg: #0f172a;
+    --card: #111827;
+    --text: #e5e7eb;
+    --muted: #94a3b8;
+  }
+  
+  * { box-sizing: border-box; }
+  
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    background: linear-gradient(120deg, var(--bg), #0b132b);
+    color: var(--text);
+  }
+  
+  .container {
+    max-width: 680px;
+    margin: 56px auto;
+    padding: 24px;
+    background: var(--card);
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.35);
+  }
+  
+  h1 { margin: 0 0 12px; font-size: 28px; }
+  hr { border: none; border-top: 1px solid #1f2937; margin: 12px 0 24px; }
+  
+  .form {
+    display: grid;
+    gap: 14px;
+  }
+  
+  label {
+    display: grid;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--muted);
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid #243142;
+    background: #0b1220;
+    color: var(--text);
+    outline: none;
+  }
+  input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(65,217,254,.18);
+  }
+  
+  .actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 4px;
+  }
+  
+  button {
+    appearance: none;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: #0a0a0a;
+  }
+  button.ghost {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid #2a394f;
+  }
+  
+  .output {
+    margin-top: 28px;
+    padding: 16px;
+    border: 1px dashed #2a394f;
+    border-radius: 12px;
+    background: #0b1220;
+  }
+  .output h2 { margin: 0 0 10px; font-size: 18px; }
+  .output p { margin: 4px 0; }
+  
